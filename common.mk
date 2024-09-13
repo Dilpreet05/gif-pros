@@ -214,7 +214,7 @@ library: $(LIBAR)
 
 .PHONY: template
 template: clean-template $(LIBAR)
-	$Dpros c create-template . $(LIBNAME) $(VERSION) $(foreach file,$(TEMPLATE_FILES) $(LIBAR),--system "$(file)") --target v5 $(CREATE_TEMPLATE_FLAGS)
+	$D/cygdrive/c/Users/dpyuv/AppData/Roaming/Code/User/globalStorage/sigbots.pros/install/pros-cli-windows/pros c create-template . $(LIBNAME) $(VERSION) $(foreach file,$(TEMPLATE_FILES) $(LIBAR),--system "$(file)") --target v5 $(CREATE_TEMPLATE_FLAGS)
 endif
 
 # if project is a library source, compile the archive and link output.elf against the archive rather than source objects
